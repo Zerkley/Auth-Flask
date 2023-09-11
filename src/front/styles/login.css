@@ -1,0 +1,138 @@
+/* CONTENEDOR PRINCPIAL */
+
+.login-main {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg,
+        rgba(101, 42, 95, 0.626) 0%,
+        rgba(130, 29, 118, 0.61) 35%,
+        rgba(189, 7, 162, 0.621) 100%);
+    height: 500px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #24004628;
+    top: 50px;
+  }
+  
+  .login-main .form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+  }
+  
+  /* CHECKBOX PARA CAMBIAR ENTRE LOGIN Y REGISTRO */
+  #chk {
+    display: none;
+  }
+  
+  /* ESTILOS DE INICIO DE SESIÓN */
+  .login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login label {
+    margin: 25% 0 5%;
+  }
+  
+  /* ESTILO ETIQUETAS COMUNES */
+  label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  
+  /* ESTILOS CAMPOS DE ENTRADA */
+  .input {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  /* ESTILOS DE REGISTRO */
+  
+  .register {
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+  }
+  
+  .register label {
+    color: #573b8a;
+    transform: scale(.6);
+  }
+  
+  #chk:checked ~ .register {
+    transform: translateY(-60%);
+  }
+  
+  #chk:checked ~ .register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+  }
+  
+  #chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+  }
+  
+  /* ESTILOS BOTON LOGIN */
+  .login-button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(43, 18, 40, 1) 0%, rgba(69, 15, 63, 1) 35%, rgba(113, 5, 97, 1) 100%);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  
+  .login-button:hover {
+    background-color: #6d44b8;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ESTILOS PARA LINK */
+  
+  .link-recoverPass {
+    color: white;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    margin-top: -20px;
+    transition: color 0.3s;
+    transition: background-position 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .link-recoverPass:hover {
+    color: rgb(63, 14, 227); 
+    transform: scale(1.1); 
+  }
+  
+  /* ESTILOS ALERTAS SWAL */
+  
+  .custom-swal-button {
+    background-color: #2572c5;
+    color: white;
+    border: none;
+  }
