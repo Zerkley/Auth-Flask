@@ -118,16 +118,14 @@ export const Login = () => {
                         className: "custom-swal-button",
                     }
                 },
-                timer: 4000,
             });
             return;
         }
         let response = await actions.login(email, password);
         if (response) {
             
-            setTimeout(() => {
-                navigate("/private")
-            }, 2000);
+            
+            navigate("/private")
             setEmail("");
             setPassword("");
 
